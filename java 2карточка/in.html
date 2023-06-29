@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="st.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="loli">Жегздрин Максим Андреевич</p>
+    <a href="https://resheba.top/algebra-10-klass" id="element2">Cсылка</a>
+    <p></p>
+    <img class="img" src="3.jpg" alt="" id="element1">
+    <p1 id="computer-name">
+    </p1>
+    <button onclick="lol()">Сменить стиль</button>
+    <script>
+        function lol() {
+            document.getElementById("loli").style.color = 'blue';
+            document.getElementById("loli").style.background = 'red';
+            var block = document.getElementById("loli"); // замените "blockId" на идентификатор вашего блока
+
+            // Устанавливаем CSS свойства для перемещения блока в правый нижний угол страницы
+            block.style.position = "fixed";
+            block.style.bottom = "0";
+            block.style.right = "0";
+
+        }
+    </script>
+
+
+    <script src="cod.js"></script>
+</body>
+
+</html>

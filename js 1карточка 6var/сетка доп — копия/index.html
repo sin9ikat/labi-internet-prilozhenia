@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="app.css">
+    <title>Form</title>
+    <script> //1zad
+        function getCurrentYear() {
+        var currentYear = new Date().getFullYear();
+        alert("Текущий год: " + currentYear);
+        }
+    </script>
+</head>
+<body>
+    <button onclick="getCurrentYear()">Текущий год</button> 
+    <br>    
+    <script> //2zad
+        var firstName = "Максим"; 
+        var lastName = "Жегздрин"; 
+        var n = 5;
+        
+        for (var i = 0; i < n+5; i++){
+           document.write(firstName + " " + lastName + "<br>");
+        }
+     </script>
+
+    <script> //3zad
+        var arr = [5, -8, 1, 2, 9, 4, 7, 3, 6, 12, 15, 13, 10, 11, 14]; // исходный массив
+
+        var max = arr[0]; // предполагаем, что первый элемент максимальный
+        var min = arr[0]; // предполагаем, что первый элемент минимальный
+
+        for (var i = 1; i < arr.length; i++) { // начинаем со второго элемента
+            if (arr[i] > max) { // если находим больший элемент
+                max = arr[i]; // сохраняем его как максимальный
+            }
+            if (arr[i] < min) { // если находим меньший элемент
+                min = arr[i]; // сохраняем его как минимальный
+            }
+        }
+
+        document.write("Максимальный элемент: " + max + "<br>"); // выводим максимальный элемент
+        document.write("Минимальный элемент: " + min); // выводим минимальный элемент
+    </script>
+    <script>
+        // Ждем 4 секунды перед выводом информации
+        setTimeout(function() {
+          var infoDiv = document.getElementById('info');
+    
+          // Выводим информацию о ПК
+          infoDiv.innerHTML = "Браузер: " + navigator.userAgent;
+          infoDiv.innerHTML += "<br>Разрешение экрана: " + window.screen.width + "x" + window.screen.height;
+    
+          // Другая информация о ПК, которую может потребоваться вывести...
+        }, 4000);
+      </script>
+    
+    <div id="info"></div>
+</body>
